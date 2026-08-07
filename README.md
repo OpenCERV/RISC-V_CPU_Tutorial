@@ -89,7 +89,6 @@ Required for the supplied simulation:
 Optional:
 
 - GTKWave for waveform inspection;
-- Icarus Verilog (`iverilog` and `vvp`);
 - RISC-V binutils (`riscv64-unknown-elf-as` and `riscv64-unknown-elf-objcopy`) for assembling your own `.S` files;
 - the RISC-V GCC package for compiling C programs.
 
@@ -129,7 +128,7 @@ Toolchain package names vary by distribution. The checked-in `program.hex` means
 ```text
 TUTORIAL TRACK                         RESEARCH / ADVANCED TRACK
 Single-cycle RV32I                     Multicycle RV32I
-Simulation with Icarus Verilog         Five-stage pipeline
+Simulation with Verilator              Five-stage pipeline
 Small handwritten programs              Hazard handling and forwarding
                                         Dynamic branch prediction
                                         CoreMark and OpenLane
