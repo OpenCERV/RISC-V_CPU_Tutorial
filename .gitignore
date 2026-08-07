@@ -1,0 +1,5 @@
+single_cycle/build/
+single_cycle/programs/*.bin
+single_cycle/programs/*.o
+single_cycle/program.hex
+single_cycle/data.hex
