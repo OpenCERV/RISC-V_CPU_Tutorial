@@ -45,8 +45,24 @@ The upstream memory model loads instruction bytes from `program.hex`. Data memor
 
 ## Try it
 
+On Ubuntu, install the simulation tools once:
+
 ```bash
-cd single_cycle
+sudo apt update
+sudo apt install git build-essential verilator gtkwave
+```
+
+Check that Verilator is available:
+
+```bash
+verilator --version
+```
+
+Then clone the repository and run the first test:
+
+```bash
+git clone https://github.com/WilliamHHL/RISC-V_CPU_Tutorial.git
+cd RISC-V_CPU_Tutorial/single_cycle
 make sim
 ```
 

@@ -18,9 +18,13 @@ make sim
 inspect PASS and the waveform
 ```
 
-The fastest first run is:
+The fastest first run on Ubuntu is:
 
 ```bash
+# Install the required simulator and C++ build tools.
+sudo apt update
+sudo apt install git build-essential verilator gtkwave
+
 git clone https://github.com/WilliamHHL/RISC-V_CPU_Tutorial.git
 cd RISC-V_CPU_Tutorial/single_cycle
 make sim
@@ -75,26 +79,50 @@ Each chapter has a small checkpoint. You do not need to understand pipelining, c
 
 ## Prerequisites and tools
 
-Required:
+Required for the supplied simulation:
 
 - Git;
 - GNU Make;
 - Verilator.
+- a C++ compiler (`g++`), used to build the upstream UART simulation helper.
 
 Optional:
 
 - GTKWave for waveform inspection;
 - Icarus Verilog (`iverilog` and `vvp`);
-- the RISC-V GNU toolchain (`riscv64-unknown-elf-as` and `riscv64-unknown-elf-objcopy`) for assembling your own `.S` files.
+- RISC-V binutils (`riscv64-unknown-elf-as` and `riscv64-unknown-elf-objcopy`) for assembling your own `.S` files;
+- the RISC-V GCC package for compiling C programs.
 
-On Ubuntu, the usual packages are:
+## Install tools on Ubuntu
+
+Install the required simulation tools before cloning or running the tutorial:
 
 ```bash
 sudo apt update
-sudo apt install git make verilator gtkwave
+sudo apt install git build-essential verilator gtkwave
 ```
 
-Toolchain package names vary by distribution. The supplied `program.hex` means you can complete the CPU tutorial without installing the toolchain.
+Run this check before continuing:
+
+```bash
+verilator --version
+make --version
+g++ --version
+```
+
+To assemble the supplied `.S` examples, also install:
+
+```bash
+sudo apt install binutils-riscv64-unknown-elf
+```
+
+To compile a small C program later, install:
+
+```bash
+sudo apt install gcc-riscv64-unknown-elf
+```
+
+Toolchain package names vary by distribution. The checked-in `program.hex` means beginners can complete the first CPU simulation without the RISC-V toolchain.
 
 ## Tutorial track and research track
 

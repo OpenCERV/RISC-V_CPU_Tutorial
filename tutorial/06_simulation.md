@@ -24,6 +24,22 @@ Reset is held high for two rising edges. The upstream `PC_reg` and `reg_file` us
 The primary supported simulator is Verilator:
 
 ```bash
+# Ubuntu: install once before the first run.
+sudo apt update
+sudo apt install git build-essential verilator gtkwave
+```
+
+Confirm the required commands are available:
+
+```bash
+verilator --version
+make --version
+g++ --version
+```
+
+Then run the test:
+
+```bash
 cd single_cycle
 make sim
 ```
