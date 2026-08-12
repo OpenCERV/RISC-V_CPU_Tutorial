@@ -372,3 +372,5 @@ Run N: DRCs > 10K → back off by 0.05 on both.
 | Faster routing | Lower density | Larger die |
 | Better timing | SS corner first → FF corner | — |
 | Post-layout timing signoff | Run RCX preset (SPEF → STA → SDF) | Extra runtime |
+
+Author: WilliamHHL
