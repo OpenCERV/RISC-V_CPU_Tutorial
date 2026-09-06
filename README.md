@@ -2,7 +2,7 @@
 
 ## Build Your First RISC-V Processor in Verilog
 
-This repository is Tutorial 1 for the tentative CityUHK Open RISC-V Hub. You will build and simulate a small **single-cycle RV32I processor**. The result is a real Verilog CPU: it fetches machine code from instruction memory, executes it, and updates registers and data memory.
+This repository is Tutorial 1 for the tentative CityUHK EE RISC-V Community. You will build and simulate a small **single-cycle RV32I processor**. The result is a real Verilog CPU: it fetches machine code from instruction memory, executes it, and updates registers and data memory.
 
 The tutorial is written for readers who know basic digital logic and Verilog, but are new to CPU design. It focuses on visible cause and effect. A short assembly program becomes HEX, `$readmemh` loads the HEX, and the CPU executes one instruction per clock cycle.
 
