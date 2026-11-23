@@ -1,4 +1,4 @@
-# CityUHK-EE RISC-V Open Cummunity — RV32I CPU Tutorial
+# CityUHK-EE RISC-V Open Community — RV32I CPU Tutorial
 
 ## Build Your First RISC-V Processor in Verilog
 
